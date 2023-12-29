@@ -1,0 +1,28 @@
+{
+	"name":              "stefan/plugin-boilerplate",
+	"description":       "Wordpress plugin.",
+	"type":              "wordpress-plugin",
+	"version":           "1.0.0",
+	"license":           "GPL-2.0-or-later",
+	"authors":           [
+		{
+			"name":  "Stefan Jocić",
+			"email": "stefan_jocic@hotmail.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"scripts":           {
+		"deploy": "composer i --no-dev && npm run zip && composer i"
+	},
+	"require":           {
+	},
+	"autoload":          {
+		"psr-4": {
+			"Boiler\\": "./src"
+		}
+	},
+	"require-dev":       {
+		"roave/security-advisories": "dev-latest",
+		"symfony/var-dumper":        "^5.4"
+	}
+}

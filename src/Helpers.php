@@ -116,8 +116,8 @@ final class Helpers {
 			}
 
 			// Then check in plugin templates folder.
-			if ( file_exists( AVC_PLUGIN_DIR_PATH . "templates/{$template_name}" ) ) {
-				$located = AVC_PLUGIN_DIR_PATH . "templates/{$template_name}";
+			if ( file_exists( PLUGIN_BOILERPLATE_PLUGIN_DIR_PATH . "templates/{$template_name}" ) ) {
+				$located = PLUGIN_BOILERPLATE_PLUGIN_DIR_PATH . "templates/{$template_name}";
 				break;
 			}
 		}

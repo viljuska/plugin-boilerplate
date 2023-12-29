@@ -6,9 +6,12 @@
 
 namespace Boiler;
 
-use Boiler\Abstracts\MainInterface;
 use Boiler\Traits\Singleton;
 
-class Actions extends MainInterface {
+class Actions  {
 	use Singleton;
+
+	private function __construct() {
+
+	}
 }

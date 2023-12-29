@@ -6,14 +6,17 @@
 
 namespace Boiler;
 
-use Boiler\Abstracts\MainInterface;
 use Boiler\Traits\Singleton;
 
-class Ajax extends MainInterface {
+class Ajax {
 	use Singleton;
 
 	private array $public_actions;
 	private array $private_actions;
+
+	private function __construct() {
+		$this->addActions();
+	}
 
 	/**
 	 * register default hooks and actions for WordPress

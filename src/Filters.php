@@ -6,9 +6,12 @@
 
 namespace Boiler;
 
-use Boiler\Abstracts\MainInterface;
 use Boiler\Traits\Singleton;
 
-class Filters extends MainInterface {
+class Filters{
 	use Singleton;
+
+	private function __construct() {
+
+	}
 }
